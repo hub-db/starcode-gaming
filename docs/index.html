@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#070912">
+  <meta name="description" content="ArcadeForge – kostenlose HTML5-Games direkt im Browser spielen.">
+  <title>ArcadeForge – HTML5 Games</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <script src="./assets/js/app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#games">Zu den Spielen</a>
+  <header class="header">
+    <a class="brand" href="./"><span class="mark"><i></i></span><b>Arcade<span>Forge</span></b></a>
+    <nav><a href="#games" data-t="games">Spiele</a><a href="#games" data-t="new">Neu</a><a href="#about" data-t="about">Über</a></nav>
+    <div class="actions"><button id="lang" type="button" aria-label="Sprache wechseln">◎ <b>DE</b></button><a class="btn small" href="#games" data-t="play">Spielen</a></div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-art" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <p class="eyebrow"><i></i><span data-t="eyebrow">KOSTENLOS · DIREKT · OHNE DOWNLOAD</span></p>
+        <h1 data-t="headline">Deine nächste Runde beginnt hier.</h1>
+        <p data-t="lead">Entdecke handverlesene HTML5-Games – sofort spielbar auf deinem Gerät.</p>
+        <div class="hero-buttons"><a class="btn" href="#games"><span data-t="playNow">Jetzt spielen</span> →</a><a class="more" href="#games"><span data-t="all">Alle Spiele</span> ↘</a></div>
+        <label class="search"><i></i><input id="search" type="search" data-placeholder="search" placeholder="Spiele durchsuchen …"><kbd>Ctrl K</kbd></label>
+      </div>
+    </section>
+    <section class="library" id="games">
+      <div class="section-head">
+        <div><p class="kicker">GAME LIBRARY</p><h2 data-t="popular">Beliebte Spiele</h2></div>
+        <div class="filters"><button class="active" data-device="all" data-t="filterAll">Alle</button><button data-device="desktop">Desktop</button><button data-device="mobile" data-t="mobile">Mobil</button></div>
+      </div>
+      <div class="grid" id="grid" aria-live="polite"></div>
+      <p class="empty" id="empty" hidden data-t="empty">Keine passenden Spiele gefunden.</p>
+    </section>
+    <section class="about" id="about">
+      <div><p class="kicker">OPEN WEB GAMING</p><h2 data-t="aboutTitle">Gebaut fürs offene Web.</h2></div>
+      <p data-t="aboutText">ArcadeForge läuft komplett im Browser, sammelt keine Kontodaten und funktioniert als statische GitHub-Pages-Website.</p>
+      <div class="stats"><span><b>3</b><i data-t="original">Originalspiele</i></span><span><b>0</b><i>Downloads</i></span><span><b>MIT</b><i>Open Source</i></span></div>
+    </section>
+  </main>
+  <footer><a class="brand" href="./"><span class="mark"><i></i></span><b>Arcade<span>Forge</span></b></a><p>© 2026 ArcadeForge · <a href="./LICENSE">MIT License</a></p><a href="./README.md">README</a></footer>
+</body>
+</html>
