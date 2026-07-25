@@ -1,0 +1,20 @@
+id: "i8Lk"
+slug: "LastTrain"
+title:
+  de: "LastTrain"
+  en: "LastTrain"
+languages:
+  - de
+  - en
+devices:
+  - desktop
+  - mobile
+  - tablet
+input:
+  - keyboard
+  - touch
+orientation: "portrait-preferred"
+version: "1.0.0"
+license: "MIT"
+entrypoint: "index.html"
+route: "../../game/i8Lk/"
