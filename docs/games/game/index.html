@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <meta name="theme-color" content="#070806">
+  <title>LAST TRAIN — 3D Horror</title>
+  <link rel="icon" href="favicon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="game"></main>
+  <div class="grain"></div><div class="vignette"></div><div id="blood"></div>
+
+  <header id="hud" class="hide">
+    <div class="objective"><small>AKTUELLES ZIEL</small><b id="objective">Finde die Sicherungen</b></div>
+    <div class="time"><small>LETZTER ZUG</small><b>00:13</b></div>
+    <button id="pause" aria-label="Pause">Ⅱ</button>
+  </header>
+  <aside id="status" class="hide">
+    <div><span>TASCHENLAMPE</span><i class="meter"><b id="battery"></b></i><em id="batteryText">100%</em></div>
+    <div><span>SICHERUNGEN</span><b id="fuses">0 / 3</b></div>
+  </aside>
+  <div id="warning">ES HAT DICH GEHÖRT</div>
+  <div id="crosshair" class="hide"><i></i></div>
+  <div id="prompt"></div>
+
+  <nav id="mobile" class="hide">
+    <div id="stick"><i></i></div>
+    <button id="lamp"><b>☀</b><small>LICHT</small></button>
+  </nav>
+
+  <section id="menu" class="screen active">
+    <div class="menu-fog"></div>
+    <article>
+      <p class="eyebrow">NACHTLINIE // 00:13 UHR</p>
+      <h1>LAST<br><b>TRAIN</b></h1>
+      <p class="tagline">DU BIST NICHT ALLEIN AUF DEM BAHNSTEIG.</p>
+      <p class="story">Die Station ist seit Jahren geschlossen. Trotzdem kam heute Nacht ein Zug an. Finde drei Sicherungen, öffne das Notfalltor und halte deine Taschenlampe nicht zu lange an.</p>
+      <div><button id="start" class="primary">STATION BETRETEN <i>→</i></button><button id="how">STEUERUNG</button></div>
+      <small class="note">KOPFHÖRER EMPFOHLEN · VOLLBILD STARTET AUTOMATISCH</small>
+    </article>
+    <aside class="case">
+      <span>VERMISSTENAKTE</span>
+      <div class="photo"><i></i><b>?</b></div>
+      <p><small>NAME</small><b>UNBEKANNT</b></p>
+      <p><small>LETZTER KONTAKT</small><b>GLEIS 04</b></p>
+      <p><small>STATUS</small><b class="red">NICHT GEFUNDEN</b></p>
+    </aside>
+    <footer>COPYRIGHT © 2026 STARCODE <span>FALL NR. 0713</span></footer>
+  </section>
+
+  <section id="howbox" class="overlay">
+    <article class="modal"><button class="x">×</button><small>ÜBERLEBENSHANDBUCH</small><h2>STEUERUNG</h2>
+      <ul>
+        <li><kbd>WASD</kbd><p><b>Bewegen</b><span>Auf dem Handy: linker Joystick</span></p></li>
+        <li><kbd>MAUS</kbd><p><b>Umschauen</b><span>Auf dem Handy: rechte Bildschirmhälfte ziehen</span></p></li>
+        <li><kbd>F</kbd><p><b>Taschenlampe</b><span>Licht verrät deine Position</span></p></li>
+        <li><kbd>SHIFT</kbd><p><b>Rennen</b><span>Du bist dabei lauter</span></p></li>
+      </ul><button class="primary ok">VERSTANDEN <i>✓</i></button>
+    </article>
+  </section>
+
+  <section id="pausebox" class="overlay">
+    <article class="modal center"><small>DIE ZEIT STEHT STILL</small><h2>PAUSE</h2>
+      <button id="resume" class="primary">WEITER <i>→</i></button><button id="quit">ZUM HAUPTMENÜ</button>
+    </article>
+  </section>
+
+  <section id="overbox" class="overlay">
+    <article class="modal center"><small class="danger">DU HÄTTEST DAS LICHT AUSLASSEN SOLLEN</small><h2>GEFUNDEN</h2>
+      <p>Etwas hat dich in der Dunkelheit erwischt.</p><button id="again" class="primary">NOCHMAL <i>↻</i></button><button id="back">ZUM HAUPTMENÜ</button>
+    </article>
+  </section>
+
+  <section id="winbox" class="overlay">
+    <article class="modal center"><small>NOTFALLTOR ENTRIEGELT</small><h2>ENTKOMMEN</h2>
+      <p>Hinter dir fällt das Tor ins Schloss. Aus dem Tunnel hörst du noch ein letztes Flüstern.</p><button id="winAgain" class="primary">NOCHMAL SPIELEN <i>↻</i></button><button id="winBack">ZUM HAUPTMENÜ</button>
+    </article>
+  </section>
+
+  <div id="jumpscare"><div class="face"><i></i><i></i><b></b></div></div>
+  <div id="rotate"><b>↻</b><strong>GERÄT DREHEN</strong><span>Spiele im Querformat.</span></div>
+  <script src="vendor/three.min.js"></script><script src="game.js"></script>
+</body>
+</html>
