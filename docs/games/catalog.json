@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "games": [
+    {
+      "id":"1001","slug":"neon-drift",
+      "title":{"de":"Neon Drift","en":"Neon Drift"},
+      "description":{"de":"Weiche Hindernissen aus und jage den Highscore auf einer endlosen Neonstrecke.","en":"Dodge obstacles and chase the high score on an endless neon track."},
+      "genre":{"de":"Rennspiel","en":"Racing"},
+      "languages":["de","en"],"devices":["desktop","mobile","tablet"],
+      "cover":"./assets/img/cover-neon-drift.webp","playUrl":"./game/1001/"
+    },
+    {
+      "id":"1002","slug":"blockfall",
+      "title":{"de":"Blockfall","en":"Blockfall"},
+      "description":{"de":"Drehe Neonblöcke, räume Reihen ab und bleib so lange wie möglich im Spiel.","en":"Rotate neon blocks, clear lines and stay in the game for as long as possible."},
+      "genre":{"de":"Puzzle","en":"Puzzle"},
+      "languages":["de","en"],"devices":["desktop","mobile","tablet"],
+      "cover":"./assets/img/cover-blockfall.webp","playUrl":"./game/1002/"
+    },
+    {
+      "id":"1003","slug":"orbit-defender",
+      "title":{"de":"Orbit Defender","en":"Orbit Defender"},
+      "description":{"de":"Verteidige den Planeten gegen Drohnenwellen in einem schnellen Weltraum-Shooter.","en":"Defend the planet against drone waves in a fast space shooter."},
+      "genre":{"de":"Action","en":"Action"},
+      "languages":["de","en"],"devices":["desktop","mobile","tablet"],
+      "cover":"./assets/img/cover-orbit-defender.webp","playUrl":"./game/1003/"
+    }
+  ]
+}

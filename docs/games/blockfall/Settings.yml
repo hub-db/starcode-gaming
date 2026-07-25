@@ -1,0 +1,20 @@
+id: "1002"
+slug: "blockfall"
+title:
+  de: "Blockfall"
+  en: "Blockfall"
+languages:
+  - de
+  - en
+devices:
+  - desktop
+  - mobile
+  - tablet
+input:
+  - keyboard
+  - touch
+orientation: "portrait-preferred"
+version: "1.0.0"
+license: "MIT"
+entrypoint: "index.html"
+route: "../../game/1002/"

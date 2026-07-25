@@ -1,0 +1,20 @@
+id: "1001"
+slug: "neon-drift"
+title:
+  de: "Neon Drift"
+  en: "Neon Drift"
+languages:
+  - de
+  - en
+devices:
+  - desktop
+  - mobile
+  - tablet
+input:
+  - keyboard
+  - touch
+orientation: "any"
+version: "1.0.0"
+license: "MIT"
+entrypoint: "index.html"
+route: "../../game/1001/"

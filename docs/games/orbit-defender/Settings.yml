@@ -1,0 +1,21 @@
+id: "1003"
+slug: "orbit-defender"
+title:
+  de: "Orbit Defender"
+  en: "Orbit Defender"
+languages:
+  - de
+  - en
+devices:
+  - desktop
+  - mobile
+  - tablet
+input:
+  - keyboard
+  - mouse
+  - touch
+orientation: "landscape-preferred"
+version: "1.0.0"
+license: "MIT"
+entrypoint: "index.html"
+route: "../../game/1003/"
