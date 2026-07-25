@@ -8,11 +8,8 @@ languages:
   - en
 devices:
   - desktop
-  - mobile
-  - tablet
 input:
   - keyboard
-  - touch
 orientation: "portrait-preferred"
 version: "1.0.0"
 license: "MIT"
